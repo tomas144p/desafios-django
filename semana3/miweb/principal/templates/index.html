@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h1><header>Hola {{ nombre }}. Bienvenido a mi pagina de inicio.</header></h1>
+<hr>
+<p>Esta es la página principal de mi sitio web.</p>
+
+<hr>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <br>Deleniti rem, porro quia cumque quos facilis quidem ut vero numquam</br>
+    qui ea quod autem esse repellat odit accusantium,
+    quas molestiae possimus.
+</p>
+
+<hr>
+
+<p>Para acceder a mi Curriculum has de hacer clic en el enlace de abajo:</p>
+<p>
+    <a href="{% url 'curriculum' %}" target="_blank"> Curriculum Vitae</a>
+</p>
+
+
+
+<img src="{% static 'img/2.jpg' %}" alt="Real" width="350">
+<p>
+    <i>"La luna está hermosa esta noche porque no puedo pagar la luz."</i> <br>
+    <b>FUJIMOTOSAN</b>
+</p>
+
+<img src="{% static 'img/si.jpg' %}" alt="Real" width="500">
+<p>
+    <i>"Ten piedad de mí, Señor. No sólo porque soy débil, sino porque también soy criatura tuya."</i> <br>
+    <b>Kaguya Houraisan (Fumo)(Touhou)</b>
+</p>
+<p>Para finalizar</p>
+<body>
+    <a href="https://linktr.ee/derlan.144p?fbclid=PAZXh0bgNhZW0CMTEAAafLIEJ7-jkfJK6esOzNnYL7sviCfosL9y3kb5P_JPYcYTbX73e45-LYvsL5tA_aem_6tFHeaIKPy4jNQLCRA84vA"> Linktr.ee</a><br>   
+</body>
+<h3><header>¡Gracias por visitar mi sitio web!</header></h3>
+
+{% endblock %}

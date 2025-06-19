@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Curriculum Vitae{% endblock %}
+
+{% block content %}
+<h1>Tomas Sepulveda</h1>
+
+<img src="{% static 'img/yo.jpg' %}" alt="Foto Tomas" class="imagen-izquierda">
+
+<br>
+
+<p>
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<br>
+
+<table style="border-collapse: collapse;">
+    <tr>
+        <th style="border:1px solid #ccc; padding:8px;">Año</th>
+        <th style="border:1px solid #ccc; padding:8px;">PPG</th>
+        <th style="border:1px solid #ccc; padding:8px;">MPV</th>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1990-91</td>
+        <td style="border:1px solid #ccc; padding:8px;">31,9</td>
+        <td style="border:1px solid #ccc; padding:8px;">Si</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1991-92</td>
+        <td style="border:1px solid #ccc; padding:8px;">30,1</td>
+        <td style="border:1px solid #ccc; padding:8px;">Si</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1992-93</td>
+        <td style="border:1px solid #ccc; padding:8px;">32,6</td>
+        <td style="border:1px solid #ccc; padding:8px;">No</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1995-96</td>
+        <td style="border:1px solid #ccc; padding:8px;">30,4</td>
+        <td style="border:1px solid #ccc; padding:8px;">Si</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1996-97</td>
+        <td style="border:1px solid #ccc; padding:8px;">29,6</td>
+        <td style="border:1px solid #ccc; padding:8px;">No</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #ccc; padding:8px;">1997-98</td>
+        <td style="border:1px solid #ccc; padding:8px;">28,7</td>
+        <td style="border:1px solid #ccc; padding:8px;">Si</td>
+    </tr>
+</table>
+
+<ul>
+    <li> 1984 - 1983 Chicago Bulls </li>
+    <li> 1995 - 1998 Chicago Bulls</li>
+    <li> 2001 - 2003 Washington Wizars </li>
+</ul>
+
+
+<p>
+    <a href="https://youtu.be/-51AfyMqnpI?si=NVdKedhaG9q3xbbH"> Hagá click en este increible video destacado.</a><br>    
+</p>
+
+
+<h2>
+    Por favor, contesta esta breve encuesta
+</h2>
+
+<form class="form-cv">
+    <!-- Email en línea -->
+    <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="bla bla bla">
+    </div>
+    <br>
+    <div class="form-row">
+        <input type="radio" id="si" name="recibir" value="si">
+        <label for="si">Sí por favor enviame montones de correos</label> <br> 
+        <input type="radio" id="no" name="recibir" value="no">
+        <label for="no">No por favor, no me mandes ningun correo</label>
+    </div>
+    <br>
+
+    <!-- Opciones cuadradas (checkbox) -->
+    <div class="form-row">
+        <span>¿Cómo supo de nosotros?</span> <br> <br>
+        <input type="checkbox" id="facebook" name="fuente" value="facebook">
+        <label for="facebook">Facebook</label> <br> 
+        <input type="checkbox" id="periodico" name="fuente" value="periodico">
+        <label for="periodico">El periodico</label> <br> 
+        <input type="checkbox" id="contacto" name="fuente" value="contacto">
+        <label for="contacto">Un contacto</label> <br> 
+    </div>
+    <br>
+
+    <button type="submit">Enviar</button>
+
+<p> 
+    <a href="{% url 'inicio' %}" target="_blank"> Regreso pagina de inicio</a> 
+</p>
+</form>
+
+
+
+{% endblock %}
