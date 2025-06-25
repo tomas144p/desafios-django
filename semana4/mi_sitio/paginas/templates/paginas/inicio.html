@@ -1,0 +1,71 @@
+{% extends 'paginas/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <!-- Encabezado con efecto vidrio y borde transparente -->
+    <header class="text-center mb-5 p-4 rounded-4 mx-auto" 
+            style="max-width: 800px;
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;">
+        <h1 class="display-4 text-white"><strong>¡Hola, Soy Tomás Sepúlveda!</strong></h1>
+        <h2 class="text-white-50 mt-3">Bienvenido a la página principal</h2>
+    </header>
+</div>
+
+    <!-- Carrusel de imágenes -->
+    <div class="text-center mb-4">
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="/static/img/imagen1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="/static/img/imagen3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="/static/img/imagen2.jpg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+<section class="mb-5 p-4 bg-dark rounded-3 shadow-sm">
+    <h2 class="mb-4 text-center"><i class="fas fa-info-circle me-2"></i>Acerca del sitio</h2>
+
+    <div class="text-center">
+        <p class="mb-4">Esta es una página de ejemplo para mostrar como se vería a partir del uso de Bootstrap.<br> 
+            En este sitio puedes seguir el Navbar de arriba para saber acerca de mí y mi contacto.<br>
+            De igual forma, más abajo aparecen algunos enlaces.</p>
+    </div>
+
+    <hr>
+
+    <div class="text-center">
+        <p class="mb-4"> Use font awesome para acompañar a los enlaces de más abajo<br>
+            A continuacion, un link a font awesome<br>
+            Este sirve para agregar iconos al sitio web.</p>
+        <p class="mb-4"><a href="https://fontawesome.com" target="_blank"><i class="fa-regular fa-font-awesome"></i> Font Awesome</a></p>
+    </div>
+</section>
+
+{% endblock %}
+

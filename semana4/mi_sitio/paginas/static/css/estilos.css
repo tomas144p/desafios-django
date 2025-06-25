@@ -1,0 +1,134 @@
+/* Contenedor principal (Flexbox) */
+body {
+    background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+    url('/static/img/fondo.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Contenido centralizado */
+main {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical (opcional) */
+    padding: 2rem;
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centrado en pantallas anchas */
+    width: 90%; /* Margen en dispositivos pequeños */
+}
+
+/* Header y Footer */
+header, footer {
+    width: 100%;
+    background-color: #2e3535;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.site-footer { 
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto; /* Fuerza al footer a estar abajo */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+    margin-top: 1rem;
+}
+
+/* Responsive: Apila las secciones en móviles */
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 100%;
+        text-align: center;
+    }
+}
+
+.carousel {
+    max-height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.carousel-inner {
+    border-radius: 15px; /* Mismo valor que el contenedor */
+}
+
+.carousel-item img {
+    border-radius: 15px; /* Asegura que las imágenes también tengan bordes redondeados */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse (opcional) */
+}
+
+.tagline {
+    font-style: italic;
+    color: #ffffff;
+    }
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+.social-links a {
+        transition: transform 0.3s;
+    }
+.social-links a:hover {
+    transform: translateY(-3px);
+    }
+    .vr {
+    width: 2px;
+    background: rgba(0,0,0,0.1);
+    margin: 0 auto;
+    }

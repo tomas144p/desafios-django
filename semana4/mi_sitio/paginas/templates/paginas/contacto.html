@@ -1,0 +1,63 @@
+{% extends 'paginas/base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Encabezado estático con icono -->
+            <header class="text-center mb-5 p-4 rounded-3" 
+                    style="background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(5px);
+                        border: 1px solid rgba(255, 255, 255, 0.2);">
+                <h1 class="display-4 text-white">
+                    Contacto
+                </h1>
+                <p class="lead text-white opacity-75 mb-0">Información para comunicarte conmigo</p>
+            </header>
+        </div>
+    </div>
+</div>
+
+            <!-- Tarjeta de contacto estática -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <div class="row">
+                        <!-- Información de contacto -->
+                        <div class="col-md-6">
+                            <h3 class="mb-4"><i class="fas fa-id-card me-2"></i> Datos de contacto</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                    <strong>Ubicación:</strong> Temuco, Chile
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-envelope text-primary me-2"></i>
+                                    <strong>Email:</strong> tomasalonsosepulveda95@gmail.com
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone text-primary me-2"></i>
+                                    <strong>Teléfono:</strong> +56 9 8709 4968
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Horario y redes -->
+                        <div class="col-md-6">
+                            <h3 class="mb-4"><i class="fas fa-clock me-2"></i> Disponibilidad</h3>
+                            <p>Lunes a Viernes:<br>9:00 - 18:00 hrs</p>
+                            
+                            <h3 class="mt-4 mb-3"><i class="fas fa-share-alt me-2"></i> Redes</h3>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/tomas144p" target="_blank" class="btn btn-outline-dark">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://linktr.ee/derlan.144p" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fa-solid fa-desktop"></i> Linktree
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+{% endblock %}

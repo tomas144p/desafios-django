@@ -1,0 +1,99 @@
+{% extends 'paginas/base.html' %}
+
+{% block title %}Acerca de mí{% endblock %}
+
+{% block content %}
+
+<div class="container about-container">
+    <!-- Sección principal con efecto glass -->
+    <section class="text-center mb-5 p-5 rounded-4" 
+            style="background: rgba(255, 255, 255, 0.08);
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 3rem !important;">
+        <h1 class="display-4 mb-4 text-white"></i>¿Quién soy?</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="profile-img-container mb-4">
+                    <img src="/static/img/yo.jpg" class="rounded-circle shadow-lg" 
+                        alt="Mi foto de perfil" 
+                        style="width: 250px; height: 250px; object-fit: cover;
+                                border: 2px solid rgba(255, 255, 255, 0.3);">
+                </div>
+                <p class="lead text-white">Hola, soy <span class="text-primary fw-bold">Tomás Sepúlveda</span></p>
+                <p class="tagline mb-4 text-white-50"><strong>Estudiante de Técnico Universitario en Informática</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografía -->
+    <section class="mb-5 p-4 bg-dark rounded-3 shadow-sm">
+        <h2 class="mb-4 text-center"><i class="fas fa-book-open me-2"></i>Descripción</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>¡Bienvenido/a a mi web personal! Soy Tomas Sepúlveda, <br>
+                    soy originario de Loncoche, Chile. Desde 2025 <br>
+                    me dedico a especializarme en Django, Python <br>
+                    y recientemente HTML.</p>
+                <p>Llevo unos 3 a 4 meses aprendiendo y trabajando con estas modalidades en la Universidad Católica de Temuco. Desde programación en Python a desarrollo inicial de HTML's.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Generalmente disfruto jugar videojuegos y escuchar e interpretar música a través de una guitarra eléctrica que tengo en casa. <br>
+                    Y por que no, molestar y jugar con mis gatos.</p>
+                <p>La razón de este HTML es para mostrar el avance de mis proyectos y habilidades en desarrollo web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4"><i class="fas fa-laptop-code me-2"></i>Habilidades</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fab fa-python fa-3x mb-3 text-primary"></i>
+                        <h4>Backend</h4>
+                        <ul class="list-unstyled">
+                            <li>Django</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fab fa-html5 fa-3x mb-3 text-primary"></i>
+                        <h4>Frontend</h4>
+                        <ul class="list-unstyled">
+                            <li>HTML5 & CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                        <h4>Herramientas</h4>
+                        <ul class="list-unstyled">
+                            <li>Git & GitHub</li>
+                            <li>BlackBoard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="text-center py-4 bg-primary text-white rounded-3">
+        <h3 class="mb-3">¿Deseas Contactarme?</h3>
+        <a href="{% url 'contacto' %}" class="btn btn-light btn-lg">¡Ház click aquí!</a>
+    </section>
+</div>
+
+{% endblock %}

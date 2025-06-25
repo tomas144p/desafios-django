@@ -1,0 +1,35 @@
+<footer>
+<footer class="site-footer">
+    <div class="footer-content">
+        <!-- Sección de información breve -->
+        <div class="footer-section">
+            <h3>Dedicación</h3>
+            <p>Estudiante de Técnico Universitario en Informática en la Universidad Católica de Temuco.</p>
+        </div>
+
+        <!-- Sección de navegación rápida -->
+        <div class="footer-section">
+            <h3>Enlaces rápidos</h3>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="{% url 'acerca' %}">Acerca de mí <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="{% url 'contacto' %}">Contacto <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de redes -->
+        <div class="footer-section">
+            <h3>Redes</h3>
+            <div class="social-links">
+                <a href="https://github.com/tomas144p" target="_blank">Github <i class="fab fa-github"></i></a>
+                <a href="https://linktr.ee/derlan.144p" target="_blank">Linktree <i class="fa-solid fa-desktop"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright dinámico con el año actual -->
+    <div class="footer-bottom">
+        <p>&copy; {% now "Y" %} Mi Sitio Personal. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</footer>
